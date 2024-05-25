@@ -10,7 +10,6 @@
       }
       .container{
         height:500px;
-        border:5px solid rgb(21, 112, 135);
         padding: 5px;
         display: flex;
         flex-wrap: wrap;
@@ -55,6 +54,62 @@
          position: relative;
         bottom: 40px;
       }
+       
+@media screen and (max-width: 600px) {
+  .container{
+        justify-content:start;
+        align-items:start;
+       }
+  .item {
+        height: 450px;
+        width: 400px;
+        background-color:#E7BCDE ;
+        border-radius: 10px;
+        margin: 5px;
+        font-size: 50px;
+        padding: 10px;
+      }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+       .item{
+        background-color: rgb(189, 210, 219);
+       }
+      }
+
+      /* Tablet Devices */
+
+      @media screen and (min-width: 769px) and (max-width: 903px) {
+        .item{
+        background-color: rgb(224, 218, 151);
+        margin-left: 100px;
+       }
+      }
+
+      
+      @media screen and (min-width: 903px) and (max-width: 1350px) {
+        .container{
+        height:500px;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 3px;
+        margin-bottom: 2px;
+        flex-direction: row;
+        justify-content:start;
+        align-items:start;
+       }
+        .item {
+        height: 450px;
+        width: 400px;
+        background-color:#E7BCDE ;
+        border-radius: 10px;
+        margin: 10px;
+        font-size: 50px;
+        padding: 20px;
+        margin-left: 100px;
+      }  
+      }
+  
     </style>
 </head>
 <body>
